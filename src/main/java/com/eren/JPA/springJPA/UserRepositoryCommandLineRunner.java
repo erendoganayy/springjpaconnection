@@ -23,7 +23,7 @@ public class UserRepositoryCommandLineRunner implements CommandLineRunner {
     public void run(String... args) throws Exception {
         User user=new User("irem","Admin");
        userRepository.save(user);
-        log.info("New user is created :  "+user);
+        log.info("User is created :  "+user);
         Optional<User> userWithIdOne = userRepository.findById(1L);
         log.info("User is retrieved:  "+userWithIdOne);
 
